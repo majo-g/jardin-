@@ -1,0 +1,245 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Plantas Importadas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f9f6;
+      color: #333;
+      border-left: 15px solid #2e7d32;
+      border-right: 15px solid #2e7d32;
+      min-height: 100vh;
+    }
+
+    header {
+      background: url("https://images.squarespace-cdn.com/content/v1/5fae629098d0ea21e2a96879/1606744813429-RUAOCA9E7A3OYNHOTJZ1/Screenshot+2020-11-30+at+13.54.26.png") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .catalogo {
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .planta {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .planta img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .planta:hover img {
+      transform: scale(1.05);
+    }
+
+    .planta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .planta-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .planta-info h3 {
+      color: #2e7d32;
+      margin-bottom: 8px;
+    }
+
+    .planta-info p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 40px;
+
+
+    
+}
+
+.planta-info button:hover {
+  background: #1b5e20;      /* verde más oscuro */
+  transform: scale(1.05);   /* se agranda un poquito */
+}
+
+
+      
+    
+
+    /* --- RESPONSIVIDAD --- */
+  @media (max-width: 900px) {
+  header h1 { font-size: 2.2rem; }
+  header p { font-size: 1rem; }
+  }
+
+  @media (max-width: 600px) {
+  body {
+    border-left: 8px solid #2e7d32;
+    border-right: 8px solid #2e7d32;
+  }
+  header {
+    padding: 2rem 1rem;
+  }
+  header h1 { font-size: 1.8rem; }
+  header p { font-size: 0.95rem; }
+  }
+
+  @media (max-width: 350px) {
+  body {
+    border-left: 5px solid #2e7d32;
+    border-right: 5px solid #2e7d32;
+  }
+  header h1 { font-size: 1.4rem; }
+  header p { font-size: 0.85rem; }
+  .planta-info p { font-size: 0.8rem; }
+  }
+
+  </style>
+  </head>
+  <body>
+
+  <header>
+    <h1>🌿 Catálogo de Plantas Importadas 🌿</h1>
+    <p>Explora nuestra selección exclusiva de plantas internacionales</p>
+  </header>
+
+  <section class="catalogo">
+    <div class="planta">
+      <img src="https://vivoboreal.com/wp-content/uploads/2017/07/Orquideas-phalaenopsis-vivo-boreal-3.jpg" alt="Orquídea Phalaenopsis">
+      <div class="planta-info"><h3>Orquídea </h3><p>Origen: Colombia</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://www.periodistaenjapon.com/wp-content/uploads/2018/05/bonsai_japones_maceta.jpg" alt="Bonsái japonés">
+      <div class="planta-info"><h3>Bonsái japonés</h3><p>Origen: japon</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://newses.cgtn.com/n/BfJEA-BAA-cA/BIceBIA.jpg" alt="Peonía china">
+      <div class="planta-info"><h3>Peonía china</h3><p>Origen: China</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://m.media-amazon.com/images/I/81JJcBzow8L._UF894,1000_QL80_.jpg" alt="Cerezo japonés">
+      <div class="planta-info"><h3>Cerezo japonés</h3><p>Origen: Japon</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://cdnx.jumpseller.com/camelia-y-lavanda/image/17909478/lavanda_francesa__2_.jpg?1721401054" >
+      <div class="planta-info"><h3>Lavanda francesa</h3><p>Origen: Francia</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://elnougarden.com/cdn/shop/articles/d2f52775455e465f8ea4b67a39a5414c.jpg?v=1610469344" alt="">
+      <div class="planta-info"><h3>Glicinia</h3><p>Origen: Japón</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Nelumno_nucifera_open_flower_-_botanic_garden_adelaide.jpg" alt="">
+      <div class="planta-info"><h3>Loto sagrado</h3><p>Origen: Tailandia</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://previews.123rf.com/images/ahavelaar/ahavelaar1605/ahavelaar160500177/57981360-closeup-of-red-tulips-and-blue-sky-on-dutch-tulip-flower-landscape-in-holland.jpg" alt="">
+      <div class="planta-info"><h3>Tulipán holandés</h3><p>Origen: Holanda</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://content.elmueble.com/medio/2022/11/20/gardenia-planta-flor_a82c7141_221120205636_1000x1000.jpg" alt="">
+      <div class="planta-info"><h3>Gardenia</h3><p>Origen: Indonesia</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-c9fsczUANSQFvFPs_01pBmR6cac7w-ibKg&s" alt="">
+      <div class="planta-info"><h3>Bugambilia</h3><p>Origen: Sudáfrica</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Magnolia_wieseneri.jpg" alt="">
+      <div class="planta-info"><h3>Magnolio</h3><p>Origen: Arabia</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Camelia._Campus_universitario_de_Santiago_de_Compostela.jpg/250px-Camelia._Campus_universitario_de_Santiago_de_Compostela.jpg" alt="">
+      <div class="planta-info"><h3>Camelia japonesa</h3><p>Origen: Japon</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://jardineros.com.co/wp-content/uploads/2022/04/LUCKY-BAMBOO-1.jpg" alt="">
+      <div class="planta-info"><h3>Bambú de la suerte</h3><p>Origen: Brasil</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://www.elespectador.com/resizer/v2/YTCJ2GKRF5FPFP2HHGXBQ2LIII.jpg?auth=41e2ec66eda54adf3fed2b787624be8f70d89ed9ac6bdd4aedd3f085fa17aa49&width=1110&height=739&smart=true&quality=60" alt="">
+      <div class="planta-info"><h3>Palma areca</h3><p>Origen: África</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://www.viveroelencanto.com/wp-content/uploads/2023/06/410-HELECHO-BOSTON.jpg" alt="Ficus">
+      <div class="planta-info"><h3>Helecho boston</h3><p>Origen: Asia Tropical</p><button>Comprar</button></div>
+    </div>
+
+    <div class="planta">
+      <img src="https://www.picturethisai.com/wiki-image/1080/154128268713263129.jpeg" alt="Camelia">
+      <div class="planta-info"><h3>Hortensia</h3><p>Origen: Colombia y Brasil</p><button>Comprar</button></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Jardinería Raíces de Vida | Plantas Importadas</p>
+  </footer>
+
+  </body>
+  </html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden NY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1><span>Jardineria</span> Raíces de vida</h1>
+      <p>“Cuidamos cada espacio verde con dedicación, sembrando belleza y armonía desde la raíz para que tu jardín florezca lleno de vida.”</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn">Sobre nosotros</a>
+        <a href="#" class="btn primary">Solicitar más información</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="services">
+    <div class="service-card">
+      <img src="https://st3.depositphotos.com/3009543/14498/i/450/depositphotos_144989759-stock-photo-bottles-and-containers-of-gardening.jpg" alt="Gardens">
+      <div class="service-info">
+        <h3>🌱Productos</h3>
+        <p>Ofrecemos abonos, macetas, tierra fértil y herramientas de jardinería.</p>
+        <a href="Jardin2.html" target="_blank">Leer más</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="https://lirp.cdn-website.com/a8fb6303/dms3rep/multi/opt/servicio-de-jardineria-1920w.jpg" alt="Urban">
+      <div class="service-info">
+        <h3>🌿Servicios</h3>
+        <p>Diseño, mantenimiento, poda y embellecimiento de jardines.</p>
+        <a href="jardin3.html" target="_blank">Leer más</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="https://img.freepik.com/foto-gratis/persona-trasplantando-plantas-macetas-nuevas_23-2149384672.jpg?semt=ais_hybrid&w=740" alt="Maintenance">
+      <div class="service-info">
+        <h3>💡Consejos de jardinería</h3>
+        <p>Orientación práctica para el cuidado de tus plantas.</p>
+        <a href="Jardin4.html" target="_blank">Leer más</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="https://previews.123rf.com/images/chic2view/chic2view1712/chic2view171200024/91461738-tropical-plant-and-flower-gardening-shop-business-selling-for-decorate-home-gardening.jpg" alt="Events">
+      <div class="service-info">
+        <h3>🌷Plantas importadas</h3>
+        <p>Especies exclusivas y de calidad para resaltar tus espacios.</p>
+        <a href="jardin5.html" target="_blank">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra">
+    <h2>¡Nos encargamos de todo por usted!</h2>
+    <p>En nuestra Jardinería Raíces de vida estamos orgullosos de ofrecer paisajes cuidadosamente diseñados para adaptarse a las preferencias de nuestros clientes comerciales, priorizando la sostenibilidad.</p>
+  </section>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      background: url('https://wallpapers.com/images/featured/jardineria-1t8ansjfp47e22vt.jpg') no-repeat center center/cover;
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      padding: 20px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 0 15px;
+    }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: 1rem; }
+    .hero h1 span { color: #7bff00; }
+    .hero p { font-size: clamp(0.9rem, 2.5vw, 1.2rem); margin-bottom: 2rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border: 2px solid white;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
+    }
+    .btn:hover { background: white; color: #333; }
+    .btn.primary { background: #0ed815; border: none; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 95%;
+      margin: -60px auto 40px auto;
+      position: relative;
+    }
+    .service-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    .service-card img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .service-info h3 {
+      color: #4CAF50;
+      margin-bottom: 5px;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+    }
+    .service-info p { font-size: clamp(0.8rem, 2.5vw, 0.95rem); margin-bottom: 10px; }
+    .service-info a {
+      color: #4CAF50;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+    }
+    .service-info a:hover { text-decoration: underline; }
+
+    .extra {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("https://previews.123rf.com/images/naddya/naddya1609/naddya160900020/62773222-vector-horizontal-seamless-background-with-autumn-colorful-flowers-apples-berries-and-leaves.jpg") no-repeat center center/cover;
+      position: relative;
+      color: #fff;
+    }
+    .extra::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+    .extra h2, .extra p {
+      position: relative;
+      z-index: 1;
+    }
+    .extra h2 { color: #e3e707; margin-bottom: 20px; font-size: clamp(1.2rem, 3vw, 2rem); }
+    .extra p { font-size: clamp(0.9rem, 2.5vw, 1.1rem); }
+
+
+    @media (max-width: 480px) {
+      .services {
+        padding: 20px;
+        margin: -30px auto 20px auto;
+      }
+      .service-card { padding: 15px; }
+    }
+  </style>
+</body>
+</html>
